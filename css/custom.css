@@ -1,0 +1,203 @@
+/* ----------------------------------- general-------------------------------------*/
+
+body {
+  color: #3b4252;
+  font-size: 16px;
+}
+
+a {
+  color: #838485b0;
+}
+
+a:hover {
+  color: #434c5e;
+}
+
+p {
+  font-size: 3vh;
+}
+
+/* ----------------------------------- header-------------------------------------*/
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("../img/polarbear2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .title {
+  font-size: 9vh;
+  margin-top: 0 !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+header .subtitle {
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  font-size: 2.5vh;
+}
+
+img {
+  border: 0;
+}
+
+/* ----------------------------------- navigation-------------------------------------*/
+
+.nav-brand-img {
+  width: max-content;
+  height: max-content;
+  background-image: url("../img/mylogo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-brand-font {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3b4252;
+}
+
+.nav-bg {
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(34, 34, 34, .05);
+}
+
+/* ----------------------------------- paragraph 1 introduction -------------------------------------*/
+
+.introduction-color {
+  background-color: #f4f5f8;
+  color: #657083;
+}
+
+.introduction-size {
+  min-height: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.introduction-text-padding {
+  padding: 20%;
+}
+
+/* ----------------------------------- paragraph 2 problem -------------------------------------*/
+
+.problem-color {
+  background-color: #81a1c1;
+  color: #3b4252;
+}
+
+.problem-title {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.problem-size {
+  min-height: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.problem-size-img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+/* ----------------------------------- paragraph 3 solution -------------------------------------*/
+
+.sol-title {
+  font-size: 7vh;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.sol-text {
+  font-size: 3vh;
+}
+
+.sol-background {
+  background-color: #e5e9f0
+}
+
+.sol-size {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.sol-img-height {
+  max-height: 250px;
+}
+
+/* ----------------------------------- footer -------------------------------------*/
+
+.footer-style {
+  background-color: #9fc0e0;
+  color: #2e3440;
+}
+
+/* ----------------------------------- about-us -------------------------------------*/
+
+.about-img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+}
+
+.about-header-size {
+  font-size: 4vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about-para-size {
+  font-size: 3vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 500;
+}
+
+.about-color {
+  background-color: #d8dee9;
+}
+
+/*-------------------------------------------- login ----------------------------*/
+
+.login-bg {
+  color: rgba(0, 0, 0, 0.856);
+  background-color: #eceff4;
+}
+
+.hide-label {
+  display: none;
+}
+
+/*------------------------------donation make------------*/
+
+.donation-amount-label {
+  background-color: #f6f6f4;
+  border: none;
+  color: #666;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: all .2s ease-in-out;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+}

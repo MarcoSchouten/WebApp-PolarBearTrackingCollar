@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Save Polar Bears | YOUR actions make a difference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Libraries by CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <!-- Custom -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    <script src="../js/custom.js"></script>
+  </head>
+
+  <body class="login-bg">
+    <!--------------------------------------------- Navigation--------------------------------------------------->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top nav-bg nav-font shadow-sm"
+    >
+      <a class="navbar-brand ml-1 my-0    " href="../html/index.html">
+        <img
+          src="../img/mylogo.jpg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        <span class="nav-brand-font">Save Polar Bears</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav my-0 ml-auto mr-1">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html">About us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../html/login.html">Sign-in</a>
+          </li>
+          <li>
+            <a href="../html/donate.html" class="btn btn-primary">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ............................CONTENT.................................................................-->
+
+    <div class="container pt-5 mt-5 pb-5">
+      <div class="card bg-light mx-auto" style="max-width: 400px;">
+        <article class="card-body mx-auto">
+          <h4 class="card-title mt-3 text-center pb-4">Login</h4>
+
+          <form action="../php/login.php" method="POST">
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <!-- form-group// -->
+
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="pass"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <!-- form-group// -->
+
+            <div class="form-group">
+              <input
+                type="submit"
+                value="Submit"
+                class="btn btn-primary btn-block"
+              />
+            </div>
+            <!-- form-group// -->
+
+            <p class="text-center 1rem" style="font-size: 1.2rem;">
+              Do you not already have a registered account?
+              <a href="registration.html">Register here</a>
+            </p>
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!--container end.//-->
+
+    <!--------------------------------------------- footer--------------------------------------------------->
+    <div class="jumbotron text-center footer-style  my-0">
+      <p>Copyright &copy; Marco Schouten 2019</p>
+      <p>
+        This website is a project for the Web App Development module at
+        University of Genoa
+      </p>
+    </div>
+    <!-- Close Footer -->
+  </body>
+</html>

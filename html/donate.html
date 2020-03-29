@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Save Polar Bears | YOUR actions make a difference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Libraries by CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    <script defer src="../js/custom.js"></script>
+  </head>
+
+  <body class="login-bg">
+    <!--------------------------------------------- Navigation--------------------------------------------------->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top nav-bg nav-font shadow-sm"
+    >
+      <a class="navbar-brand ml-1 my-0    " href="../html/index.html">
+        <img
+          src="../img/mylogo.jpg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        <span class="nav-brand-font">Save Polar Bears</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav my-0 ml-auto mr-1">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/login.html">Sign-in</a>
+          </li>
+          <li>
+            <a href="../html/donate.html" class="btn btn-primary">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------------------Content ----------------------------------------------->
+    <div class="container-fluid pt-5 mt-5 pb-5" style="max-width: 600px;">
+      <!-- logo ringraziamenti-->
+      <div class="row py-1">
+        <div class="col ">
+          <div class="card mx-auto shadow">
+            <div class="navbar-brand mt-3    text-center ">
+              <img
+                src="../img/mylogo.jpg"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt=""
+              />
+              <span class="nav-brand-font">Save Polar Bears</span>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                We have been doing great so far!
+              </p>
+              <p class="card-text">
+                Let's keep going!
+              </p>
+              <p class="card-text">
+                Our funding target is 10.000 $
+              </p>
+
+              <!-- la barra-->
+              <div class="progress" style="height: 20px;">
+                <div
+                  id="mybar"
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <p class="card-text">
+                To support our project and make a donation you need a registered
+                account
+              </p>
+              <a
+                href="../html/registration.html"
+                class="btn btn-primary text-center"
+                >Create a new account</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--donate-->
+      <div class="row py-1">
+        <!--------------------------------------------- content--------------------------------------------------->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h4>Make a Donation</h4>
+                      <hr />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form
+                        id="form"
+                        action="../php/send_donation.php"
+                        method="post"
+                        onsubmit="return validate(this)"
+                      >
+                        <div class="form-group row">
+                          <label for="email" class="col-4 col-form-label"
+                            >Email</label
+                          >
+                          <div class="col-8">
+                            <input
+                              id="email"
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="password" class="col-4 col-form-label"
+                            >Password</label
+                          >
+                          <div class="col-8">
+                            <input
+                              id="pass"
+                              type="password"
+                              name="pass"
+                              class="form-control"
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="nickname" class="col-4 col-form-label"
+                            >Nickname</label
+                          >
+                          <div class="col-8">
+                            <input
+                              id="nickname"
+                              name="nickname"
+                              placeholder="Anonymous"
+                              value="Anonymous"
+                              class="form-control here"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="amount" class="col-4 col-form-label"
+                            >Amount ($)</label
+                          >
+                          <div class="col-8">
+                            <input
+                              id="amount"
+                              name="amount"
+                              placeholder="Insert your amount"
+                              class="form-control here"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="confirm" class="col-4 col-form-label"
+                            >Message</label
+                          >
+                          <div class="col-8">
+                            <input
+                              id="confirm"
+                              name="message"
+                              placeholder="Type your donation message"
+                              class="form-control here"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="offset-4 col-8">
+                            <button
+                              name="submit"
+                              type="submit"
+                              class="btn btn-primary"
+                            >
+                              Proceed
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                      <div id="error"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- close row-->
+        </div>
+        <!-- close container-->
+      </div>
+
+      <!-- join and be part of the community -->
+      <div class="row py-1">
+        <div class="col">
+          <div class="card bg-light mx-auto shadow">
+            <div class="px-3 pt-3">
+              <div class="col-md-12">
+                <h4>Recent donations</h4>
+                <hr />
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"
+                    >Filter search</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="search_text"
+                  style="width: 0%;"
+                  id="search_text"
+                  placeholder="Type nickname"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+
+              <div id="result"></div>
+            </div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------- footer--------------------------------------------------->
+    <div class="jumbotron text-center footer-style my-0 ">
+      <p>Copyright &copy; Marco Schouten 2019</p>
+      <p>
+        This website is a project for the Web App Development module at
+        University of Genoa
+      </p>
+    </div>
+    <!-- Close Footer -->
+  </body>
+</html>
+
+<!----------------------- script----------------------------->
+<script>
+  // when ready
+  $(document).ready(function() {
+    // -----------------------STEP 1 load the progress bar
+    $.ajax({
+      type: "get",
+      dataType: "JSON",
+      url: "../php/get_current_amount.php",
+      // imposto un'azione per il caso di successo
+      success: function(data) {
+        $("#mybar").attr("style", data["width"]);
+        $("#mybar").html(data["fraction"]);
+      },
+      // ed una per il caso di fallimento
+      error: function() {
+        alert("Chiamata fallita!!!");
+      }
+    });
+
+    // -----------------------------STEP 2 -load the table
+    load_data();
+    function load_data(query) {
+      $.ajax({
+        url: "../php/search.php",
+        method: "post",
+        data: {
+          query: query
+        },
+        success: function(data) {
+          $("#result").html(data);
+        }
+      });
+    }
+
+    $("#search_text").keyup(function() {
+      var search = $(this).val();
+      if (search != "") {
+        load_data(search);
+      } else {
+        load_data();
+      }
+    });
+  });
+
+  // form validation
+  const email = document.getElementById("email");
+  const password = document.getElementById("pass");
+  const nickname = document.getElementById("nickname");
+  const amount = document.getElementById("amount");
+  const message = document.getElementById("message");
+
+  const form = document.getElementById("form");
+  const errorElement = document.getElementById("error");
+
+  form.addEventListener("submit", e => {
+    let messages = [];
+    if (email.value === "" || email.value == null) {
+      messages.push("Email is required");
+    }
+
+    if (password.value === "" || password.value == null) {
+      messages.push("Password is required");
+    }
+
+    if (nickname.value === "" || nickname.value == null) {
+      messages.push("Nickname is required");
+    }
+
+    if (amount.value === "" || amount.value == null) {
+      messages.push("Amount is required");
+    }
+
+    if (isNaN(amount.value) || amount.value > 0) {
+      messages.push("Amount needs to be a positive number ");
+    }
+
+    if (messages.length > 0) {
+      e.preventDefault();
+      errorElement.style.color = "red";
+      errorElement.innerText = messages.join(". ");
+    }
+  });
+</script>
