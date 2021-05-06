@@ -17,9 +17,3 @@ $mysql_db = "S4502434";
 
 
 
-// TODO: webserver
-/*
-$mysql_user = "S4502434";
-$mysql_pass = "ckd&amp;Var?";
-$mysql_db = "S4502434";  // da sostituire con default_db
-*/
